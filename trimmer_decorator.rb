@@ -5,6 +5,6 @@ class TrimmerDecorator < Decorator
 
   def correct_name
     name = @nameable.correct_name
-    name.length > MAXIMUM_NAME_LENGTH ? name[0..MAXIMUM_NAME_LENGTH] : name
+    name.length > MAXIMUM_NAME_LENGTH ? name[0...MAXIMUM_NAME_LENGTH] : name
   end
 end
