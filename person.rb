@@ -1,5 +1,8 @@
-class Person
-  def initialize(age, name = 'Unknown', parent_permission: true)
+require './nameable'
+
+class Person < Nameable
+  def initialize(age, name, parent_permission: true)
+    super()
     @age = age
     @name = name
     @parent_permission = parent_permission
@@ -7,6 +10,10 @@ class Person
 
   attr_reader :id
   attr_accessor :name, :age
+
+  def correct_name
+    @name
+  end
 
   private
 
