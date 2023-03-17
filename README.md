@@ -174,6 +174,7 @@ If you like this project give a star ⭐️
 
 I would like to thank fellow Micronauts.
 
+## 📝 License <a name="license"></a>
 This project is [MIT](./LICENSE) licensed.
 
 

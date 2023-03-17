@@ -1,8 +1,10 @@
 require './person'
 
 class Teacher < Person
-  def initialize(specialization)
-    super
+  attr_reader :specialization
+
+  def initialize(name, age, specialization)
+    super(name, age)
     @specialization = specialization
   end
 
