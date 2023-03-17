@@ -12,7 +12,7 @@ class App
   end
 
   # rubocop:disable Metrics/CyclomaticComplexity
-  def run
+  def main
     loop do
       homepage
       selected_option = gets.chomp.to_i
