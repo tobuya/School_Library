@@ -50,7 +50,7 @@ class App
     puts 'List of all books'
     @books.each do |book|
       puts "Title: #{book.title}, Author: #{book.author}\n"
-      puts
+      # puts
     end
   end
 
@@ -71,7 +71,7 @@ class App
     else
       puts 'You can only create a teacher(1) or student(2)'
     end
-    # puts
+    puts
   end
 
   def create_a_teacher
@@ -86,7 +86,7 @@ class App
     teacher = Teacher.new(age, name, specialization)
     @people << teacher
     puts "#{teacher.name} who specializes in #{teacher.specialization} has been created successfully.\n"
-    # puts
+    puts
   end
 
   def create_a_student
