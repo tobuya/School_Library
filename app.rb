@@ -50,7 +50,7 @@ class App
     puts 'List of all books'
     @books.each do |book|
       puts "Title: #{book.title}, Author: #{book.author}\n"
-      # puts
+      puts
     end
   end
 
